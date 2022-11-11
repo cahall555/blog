@@ -6,7 +6,7 @@ layout: homePage.hbs
 hero-img: projects/container-hero.jpg
 intro:
     header: Homesteading 
-    message: something that pulls people in.
+    message: long message
 projects:
     header: something about projects
 
