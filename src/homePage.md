@@ -5,9 +5,8 @@ collection: home-page
 layout: homePage.hbs
 hero-img: projects/container-hero.jpg
 intro:
-    header: Homesteading 
-    message: long message
+  header: Homesteading
+  message: long message
 projects:
-    header: something about projects
-
+  header: something about projects
 ---

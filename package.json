@@ -13,7 +13,8 @@
     "@metalsmith/layouts": "^2.5.1",
     "@metalsmith/markdown": "^1.6.0",
     "jstransformer-handlebars": "^1.2.0",
-    "metalsmith": "^2.5.0",
+    "metalsmith": "^2.5.1",
+    "prettier": "2.7.1",
     "tailwindcss": "^3.1.6"
   },
   "dependencies": {

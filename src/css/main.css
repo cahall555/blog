@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#hero {
+	background-image: url('assets/beach.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+@media(max-width: 576px) {
+		background-image: url('assets/beach.jpg');
+	object-position: bottom;
+}
+
+#build {
+	background-image: url('assets/build_road.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+@media(max-width: 576px) {
+		background-image: url('assets/build_road.jpg');
+	background-position: center;
+}
+
+#container {
+	background-image: url('assets/shipping_container.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+@media(max-width: 576px) {
+		background-image: url('assets/shipping_container.jpg');
+	background-position: center;
+}
+
+#farm {
+	background-image: url('assets/gnips.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+@media(max-width: 576px) {
+		background-image: url('assets/gnips.jpg');
+	background-position: center;
+}

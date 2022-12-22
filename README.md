@@ -1,2 +1,2 @@
 Notes:
-use node index.js 
+use node index.js

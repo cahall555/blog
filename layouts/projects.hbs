@@ -9,10 +9,7 @@
       type="text/javascript"
       defer
     ></script>
-    <script
-      src="../components/infoBox.js"
-      type="text/javascript"
-    ></script>
+    <script src="../components/infoBox.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -32,16 +29,17 @@
       </div>
     </div>
 
-<div class="flex p-4">
-<div class="container mx-auto bg-white">
-  <p>{{info-message.title}} </p>
-  <p>{{info-message.notes}} </p>
-  <infobox-component 
-  title={{info-message.title}}
-  notes={{info-message.notes}}>
-  </infobox-component>
-  <p>something else below</p>
-</div>
-</div>
-</body>
+    <div class="flex p-4">
+      <div class="container mx-auto bg-white">
+        <p>{{info-message.title}} </p>
+        <p>{{info-message.notes}} </p>
+        <infobox-component
+          title={{info-message.title}}
+          notes={{info-message.notes}}
+        >
+        </infobox-component>
+        <p>something else below</p>
+      </div>
+    </div>
+  </body>
 </html>

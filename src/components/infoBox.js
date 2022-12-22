@@ -1,10 +1,10 @@
 class InfoBox extends HTMLElement {
-    constructor() {
-      super();
-    }
+  constructor() {
+    super();
+  }
   connectedCallback() {
-      var title = this.title
-      var notes = this.attributes.notes.value
+    var title = this.title;
+    var notes = this.attributes.notes.value;
     this.innerHTML = `
 
     <div
@@ -38,4 +38,4 @@ class InfoBox extends HTMLElement {
   }
 }
 
-  customElements.define('infobox-component', InfoBox);
+customElements.define("infobox-component", InfoBox);

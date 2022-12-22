@@ -8,14 +8,14 @@ layout: projects.hbs
 hero-img: container-hero.jpg
 link: projects/shippingContainer.html
 project-summary:
-    header: Paint Shipping Container
-    message: We have decided the shipping container ...
+  header: Paint Shipping Container
+  message: We have decided the shipping container ...
 
-info-message: 
-    title: paint sprayer
-    notes: this is a note
+info-message:
+  title: paint sprayer
+  notes: this is a note
 days:
-    day-1:
-        title:
-        message:
+  day-1:
+    title:
+    message:
 ---
