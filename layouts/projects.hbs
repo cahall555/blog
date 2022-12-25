@@ -14,32 +14,29 @@
 
   <body>
     <navigation-component></navigation-component>
-    <h1 class="text-grey">{{{title}}}</h1>
-    <div
-      class="bg-cover bg-center p-4"
-      style="background-image: url({{hero-img}})"
-    >
-      <div class="md:container md:mx-auto p-4 bg-white opacity-75">
-        <div class="mt-4 mb-6">
-          <div class="mb-3 text-xl font-bold">{{{project-summary.header}}}</div>
-          <div
-            class="text-sm text-neutral-600"
-          >{{{project-summary.message}}}</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex p-4">
-      <div class="container mx-auto bg-white">
-        <p>{{info-message.title}} </p>
-        <p>{{info-message.notes}} </p>
-        <infobox-component
-          title={{info-message.title}}
-          notes={{info-message.notes}}
-        >
-        </infobox-component>
-        <p>something else below</p>
-      </div>
-    </div>
-  </body>
+<div class="container h-screen w-full mx-auto items-center">
+  <div class="flex flex-col flex-wrap pb-6 mb-8 md:p-6 md:mb-0 md:flex-row">
+   <div class="z-40 w-54 md:w-screen h-24 rounded-lg bg-blue">
+    <ul class="invisible md:visible md:flex md:flex-row md:gap-x-8 md:font-jua md:text-white md:pl-10 md:mt-5 md:text-xl">
+        <li class="hover:scale-105"><a href="#">Home</a></li>
+        <li class="hover:scale-105"><a href="#">Subscribe</a></li>
+	<li class="hover:scale-105"><a href="#contact-us">Get in touch</a></li>
+    </ul>
+   </div>
+   <div class="flex flex-col mx-auto m-4">
+   <h1 class="font-jua text-xl">{{title}}<h1>
+<h2 class="font-jua text-lg text-gray-dark my-4">{{publishDate}}></h2>
+<div class="flex flex-row">
+<div id="{{avatar}}" class="h-12 w-12 rounded-full bg-center-6">
+</div>
+<h3 class="font-jua m-3">{{author}}</h3>
+</div>
+   </div>
+   <div class="mt-8 font-jua">
+<img id="{{hero-img}}" class="h-64 w-96 m-4 float-right" />   
+<p>{{{contents}}}</p>
+   </div>
+   </div>
+  </div>
+   </body>
 </html>

@@ -4,13 +4,15 @@ const layouts = require("@metalsmith/layouts");
 const markdown = require("@metalsmith/markdown");
 const collections = require("@metalsmith/collections");
 const handelbars = require("metalsmith-handlebars-layouts");
+const dateFormatter = require("metalsmith-date-formatter");
+const permalinks = require("@metalsmith/permalinks");
 
 Metalsmith(__dirname)
   .use(
     collections({
       projects: {
         title: "latest project",
-        sortBy: "pubdate",
+        sortBy: "publishDate",
         reverse: true,
         pattern: "**/*.md",
         metadata: {
@@ -25,7 +27,14 @@ Metalsmith(__dirname)
       preventIndent: true,
     })
   )
+
+  .use(permalinks({
+	  pattern: ':title'
+	 })
+    )
   .use(markdown())
+
+  .use(dateFormatter())
 
   .build(function (err) {
     if (err) throw err;
